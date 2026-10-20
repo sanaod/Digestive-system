@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="abqoorBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="badgeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Shield Ring -->
+  <rect x="25" y="25" width="450" height="450" rx="90" fill="url(#abqoorBg)" stroke="url(#badgeGold)" stroke-width="8" />
+
+  <!-- Orbit Rings of Science -->
+  <ellipse cx="250" cy="200" rx="160" ry="50" fill="none" stroke="#38bdf8" stroke-width="4" stroke-dasharray="8,6" opacity="0.6" transform="rotate(-15 250 200)" />
+  <ellipse cx="250" cy="200" rx="160" ry="50" fill="none" stroke="#fbbf24" stroke-width="4" stroke-dasharray="8,6" opacity="0.6" transform="rotate(25 250 200)" />
+
+  <!-- Abqoor Character Portrait -->
+  <g transform="translate(250, 190)">
+    <!-- Lab Coat Shoulders -->
+    <path d="M -90 120 C -70 70, 70 70, 90 120 C 60 140, -60 140, -90 120 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="4" />
+    <!-- Shirt Collar & Tie -->
+    <path d="M -25 75 L 0 110 L 25 75 Z" fill="#38bdf8" />
+    <path d="M -10 75 L 0 120 L 10 75 Z" fill="#e11d48" />
+
+    <!-- Head -->
+    <ellipse cx="0" cy="10" rx="65" ry="68" fill="#fed7aa" stroke="#f97316" stroke-width="3" />
+
+    <!-- Hair (Spiky Cute Genius Hair) -->
+    <path d="M -65 -15 C -80 -60, -30 -85, 0 -80 C 30 -85, 80 -60, 65 -15 C 45 -45, -45 -45, -65 -15 Z" fill="#451a03" />
+
+    <!-- Glasses (Smart Round Glasses) -->
+    <!-- Left Glass Frame -->
+    <circle cx="-28" cy="8" r="24" fill="#38bdf8" opacity="0.25" stroke="#f59e0b" stroke-width="5" />
+    <!-- Right Glass Frame -->
+    <circle cx="28" cy="8" r="24" fill="#38bdf8" opacity="0.25" stroke="#f59e0b" stroke-width="5" />
+    <!-- Glasses Bridge -->
+    <path d="M -4 8 Q 0 2 4 8" fill="none" stroke="#f59e0b" stroke-width="5" />
+
+    <!-- Eyes (Big Sparkling Happy Eyes) -->
+    <circle cx="-28" cy="8" r="9" fill="#0f172a" />
+    <circle cx="-25" cy="5" r="3" fill="#ffffff" />
+
+    <circle cx="28" cy="8" r="9" fill="#0f172a" />
+    <circle cx="31" cy="5" r="3" fill="#ffffff" />
+
+    <!-- Cheerful Smile -->
+    <path d="M -22 36 Q 0 54 22 36" fill="none" stroke="#ea580c" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Genius Graduation Cap / Star Badge -->
+    <g transform="translate(0, -85)">
+      <polygon points="0,-25 25,0 0,25 -25,0" fill="#f59e0b" />
+      <polygon points="0,-18 18,0 0,18 -18,0" fill="#fef08a" />
+    </g>
+
+    <!-- Magnifying Glass Tool -->
+    <g transform="translate(75, 45) rotate(-20)">
+      <circle cx="0" cy="0" r="28" fill="#38bdf8" opacity="0.3" stroke="#38bdf8" stroke-width="6" />
+      <rect x="-5" y="28" width="10" height="35" rx="5" fill="#f59e0b" stroke="#b45309" stroke-width="2" />
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.8" />
+    </g>
+  </g>
+
+  <!-- Banner Box at Bottom for Text -->
+  <rect x="60" y="360" width="380" height="85" rx="24" fill="#0f172a" stroke="#10b981" stroke-width="4" filter="url(#glow)" />
+
+  <text x="250" y="402" font-family="'Cairo', 'Tajawal', sans-serif" font-weight="900" font-size="28" fill="#fbbf24" text-anchor="middle">
+    عبقور التعليمي
+  </text>
+  <text x="250" y="432" font-family="'Cairo', 'Tajawal', sans-serif" font-weight="700" font-size="16" fill="#38bdf8" text-anchor="middle">
+    رحلة في الجهاز الهضمي
+  </text>
+</svg>
